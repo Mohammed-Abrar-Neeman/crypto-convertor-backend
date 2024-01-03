@@ -20,6 +20,6 @@ if (error) {
 
 module.exports = {
   env: envVars.NODE_ENV,
-  port: envVars.PORT,
+  port: process.env.PORT || 3030,
   cgapi: envVars.COIN_API_KEY,
 };
